@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //função declarada
+        function cumprimentaHelton(nome){
+            console.log(`Olá, ${nome}! seja bem vindo`)
+        }
+        let compras = function(){
+            
+        }
+
+        console.log(typeof cumprimentaHelton);
+        console.log(typeof compras)
+
+        //Arrow function simples
+        let superHeroi = () => console.log("Spiderman");
+        superHeroi();
+
+        //Arrow Function com passagem de parâmetros
+        let superHeroiUP = (nome) => console.log("Super", nome);
+        superHeroiUP("Helton");
+
+        //Arrow Function com retorno
+        let superPoder = () => "Deixer todos carecas!";
+        let retornoSP = superPoder();
+        console.log("O super poder é:", retornoSP)
+
+        //Arrow Function com passagem de parametros e retorno(completa)
+        let completa = (nome, poder) => `Super Herói: super-${nome} com`
+        console.log(completa("Juiliana", "ser pica em PHP"));
+
+        //Arrow funcrion com passagem unica de parametro
+        let simplesSimples = aluno => `Bem vindo ${aluno}`
+        console.log(simplesSimples("Alex"));
+
+        let sabor = fruta =>{
+            if(fruta == "abacaxi"){
+                return "Azedo"
+            }else if(fruta === "Maça"){
+                return "doce"
+            }else{
+                return "não encontrado";
+            }
+        }
+        console.log(sabor("Maça"));
+
+
+        //REST parameter em uma função declarada
+        function imprimeCarnes(...carnes){
+            //Função internet tambem declarada
+            function comoImprimeAsCarnes(acumulado, atual){
+                return `${acumulado} - ${atual}`;
+            }
+            return carnes.reduce(comoImprimeAsCarnes);
+        }
+        console.log(imprimeCarnes('fraldinha','Ancho','Costela','Picanha','Brisket'))
+
+        //REST parameter em uma Arrow Function
+        let imprimeBebidas = (...bebidas) => bebidas.reduce((anterior, atual) => anterior + ", " + atual," ");
+        console.log(imprimeBebidas("Coca-Cola","Skol","agua","Petroelo","Cachaça"))
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        let
+    </script>
+</body>
+</html>
